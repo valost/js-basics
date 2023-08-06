@@ -13,4 +13,4 @@ for (let i = 1; 1 <= n; i++) {
     sum += i;
 }
 
-console.log(sum)
+console.log(sum);
