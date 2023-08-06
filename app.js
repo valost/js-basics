@@ -14,3 +14,36 @@
 // }
 
 // console.log(sum);
+
+// console.log('Hi');
+
+// function getDrinks (numberOfGuests) {
+//     const numberOfGuests = 5;
+//     let drinks = 0;
+
+//     for (numberOfPortions = 1; numberOfPortions <= numberOfGuests; numberOfPortions++ ) {
+//         console.log(numberOfPortions)
+//     }
+// }
+
+// const numberOfGuests = 5;
+// let getDrinks = 0;
+
+// for (let numberOfPortions = 1; numberOfPortions <= numberOfGuests; numberOfPortions++) {
+//     getDrinks += numberOfPortions;
+// }
+
+// console.log(getDrinks);
+
+function getDrinks(numberOfGuests) {
+  
+    // const numberOfGuests = 5;
+    // let getDrinks = 0;
+    
+    for (let numberOfPortions = 1; numberOfPortions <= numberOfGuests; numberOfPortions++) {
+      numberOfGuests += numberOfPortions;
+    }
+    
+    console.log(numberOfPortions);
+    
+    }
