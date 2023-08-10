@@ -144,26 +144,14 @@
 
 
 let myName = 'Valeriia Ostrovska'
+
+// let vowels = 'a o e i';
 let result = '';
 
-for (let ch of myName) {
-  if (ch !== 'a') {
-    result = result + ch
+for (const ch of myName) {
+  if (!'aeio'.includes(ch.toLowerCase())) {
+    result += ch;
   }
 }
 
 console.log(result);
-
-
-
-
-// let myName = 'Valeriia Ostrovska'
-// let result = '';
-
-// for (let ch of myName) {
-//   if (ch !== 'a') {
-//     result = result + ch
-//   }
-// }
-
-// console.log(result);
