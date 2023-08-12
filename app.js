@@ -143,15 +143,37 @@
 // );
 
 
-let myName = 'Valeriia Ostrovska'
+// let myName = 'Valeriia Ostrovska'
 
-// let vowels = 'a o e i';
-let result = '';
+// // let vowels = 'a o e i';
+// let result = '';
 
-for (const ch of myName) {
-  if (!'aeio'.includes(ch.toLowerCase())) {
-    result += ch;
-  }
+// for (const ch of myName) {
+//   if (!'aeio'.includes(ch.toLowerCase())) {
+//     result += ch;
+//   }
+// }
+
+// console.log(result);
+
+
+let myName = 'Valeriia Ostrovska';
+
+myName = myName[0] + myName[9];
+
+console.log(myName);
+
+
+let fullName = 'Valeriia Igorivna Ostrovska';
+
+let abbreviation = fullName[0];
+
+
+for (let i = 1; i < fullName.length; i++) {
+    if (fullName[i] === ' ') {
+        abbreviation += fullName[i + 1];
+    }
 }
 
-console.log(result);
+console.log(abbreviation);
+
