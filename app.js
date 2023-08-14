@@ -157,23 +157,41 @@
 // console.log(result);
 
 
-let myName = 'Valeriia Ostrovska';
+// let myName = 'Valeriia Ostrovska';
 
-myName = myName[0] + myName[9];
+// myName = myName[0] + myName[9];
 
-console.log(myName);
-
-
-let fullName = 'Valeriia Igorivna Ostrovska';
-
-let abbreviation = fullName[0];
+// console.log(myName);
 
 
-for (let i = 1; i < fullName.length; i++) {
-    if (fullName[i] === ' ') {
-        abbreviation += fullName[i + 1];
-    }
-}
+// let fullName = 'Valeriia Igorivna Ostrovska';
 
-console.log(abbreviation);
+// let abbreviation = fullName[0];
 
+
+// for (let i = 1; i < fullName.length; i++) {
+//     if (fullName[i] === ' ') {
+//         abbreviation += fullName[i + 1];
+//     }
+// }
+
+// console.log(abbreviation);
+
+
+const letters = ['a', 'b', 'c', 'd', 'e'];
+
+// console.log(letters);
+
+// letters[letters.length] = 'z'; // not so popular
+
+// console.log(letters);
+
+letters.push('f', 'g', 'h', 'i');
+
+console.log(letters);
+
+letters.unshift('f', 'g', 'h', 'i');
+const n = letters.shift();
+
+console.log(letters);
+console.log(n);
