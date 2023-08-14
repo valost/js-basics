@@ -178,7 +178,7 @@
 // console.log(abbreviation);
 
 
-const letters = ['a', 'b', 'c', 'd', 'e'];
+// const letters = ['a', 'b', 'c', 'd', 'e'];
 
 // console.log(letters);
 
@@ -186,12 +186,37 @@ const letters = ['a', 'b', 'c', 'd', 'e'];
 
 // console.log(letters);
 
-letters.push('f', 'g', 'h', 'i');
+// letters.push('f', 'g', 'h', 'i');
 
-console.log(letters);
+// console.log(letters);
 
-letters.unshift('f', 'g', 'h', 'i');
-const n = letters.shift();
+// letters.unshift('f', 'g', 'h', 'i');
+// const n = letters.shift();
 
-console.log(letters);
-console.log(n);
+// console.log(letters);
+// console.log(n);
+
+
+const str = 'Today is a good day';
+const words = str.split(' ');
+console.log(words);
+console.log(words.length);
+// console.log(words[3]);
+
+// for (let i = 0; i < words.length; i++) {
+//     console.log(words[i]);
+// }
+
+for (const n of words) {
+    console.log(n);
+}
+
+let theLongest = words[0];
+
+for (let i = 1; i <  words.length; i++) {
+    if (words[i].length > theLongest.length) {
+        theLongest = words[i];
+    }
+}
+
+console.log(theLongest);
